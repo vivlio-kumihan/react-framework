@@ -1,3 +1,37 @@
+### startup script
+
+**Create a Gatsby site.**
+
+Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+
+```shell
+# create a new Gatsby site using the hello-world starter
+gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+```
+
+```shell
+$ gatsby develop
+```
+
+### Deploying a Gatsby site
+
+```shell
+npm install --global surge
+# Then create a (free) account with them
+surge login
+```
+
+**Deploy**
+
+```shell
+$ gatsby build
+
+# cd app root
+$ surge public/
+```
+
+---
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">

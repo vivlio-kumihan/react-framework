@@ -1,0 +1,10 @@
+html {
+  background-color: lavenderblush;
+}
+
+body {
+  font-size: 15pt;
+  font-weight: bold;
+  line-height: 1.2rem;
+  color: rgba(40,30,30,0.7)
+}

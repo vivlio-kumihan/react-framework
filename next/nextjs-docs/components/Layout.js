@@ -12,10 +12,13 @@ function Layout({ children, home }) {
     <div>
       <Head>
         <link rel="icon" href="/profile_image_Apple.ico" />
+        <title>Editorial by HTML5 UP</title>
+        <meta charset="utf-8" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       </Head>
       <Header />
       <main>{children}</main>

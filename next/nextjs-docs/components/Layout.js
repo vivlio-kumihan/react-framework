@@ -2,10 +2,7 @@ import Head from "next/head";
 import Header from "./Header";
 import Aside from "./Aside"
 import Footer from "./Footer"
-
-// import styles from "./layout.module.css"
-// import utilStyles from "../styles/utils.module.css"
-// import Link from "next/link"
+import styles from "./Layout.module.css"
 
 function Layout({ children, home }) {
   return (
@@ -16,14 +13,16 @@ function Layout({ children, home }) {
         <meta charset="utf-8" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+          content="Learn how to build a personal website using Next.js" />
+        <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no" />
       </Head>
-      <Header />
-      <main>{children}</main>
-      <Aside />
-      <Footer />
+      <div className={styles.contanier}>
+        <Header />
+        <div className={styles.main}>{children}</div>
+        <Aside className={styles.aside} />
+        <Footer className={styles.footer} />
+      </div>
     </div>
   )
 }

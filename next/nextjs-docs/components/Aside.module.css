@@ -1,0 +1,5 @@
+.aside {
+  grid-area: aside;
+  background-color: burlywood;
+  border: 1px solid brown;
+}

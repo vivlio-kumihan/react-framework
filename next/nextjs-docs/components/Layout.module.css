@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+  column-gap: 1em;
+  width: 95%;
+  margin: 0px auto;
+  border: 5px solid brown;
+}
+
+.main {
+  grid-area: main;
+  background-color: burlywood;
+  border: 1px solid brown;
+}
+
+.aside {
+  grid-area: aside;
+
+}
+
+.footer {
+  grid-area: footer;
+}

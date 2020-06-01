@@ -1,8 +1,13 @@
 import Link from "next/link"
+import styels from "./Aside.module.css"
 
-const Aside = () => {
+function Aside() {
   return (
-    <div>
+    <div className={styels.aside}>
+      <p>Aside</p>
+      <p>Aside</p>
+      <p>Aside</p>
+      <p>Aside</p>
       <p>Aside</p>
     </div>
   )

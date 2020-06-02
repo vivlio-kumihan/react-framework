@@ -38,3 +38,17 @@ h4 {
 h5 {
   font-size: 0.95rem;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+  column-gap: 1em;
+  width: 95%;
+  margin: 0px auto;
+  border: 5px solid brown;
+  background-color: cadetblue;
+}

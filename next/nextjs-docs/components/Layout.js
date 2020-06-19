@@ -17,12 +17,18 @@ function Layout({ children, home }) {
         <meta name="viewport"
           content="width=device-width, initial-scale=1, user-scalable=no" />
       </Head>
-      <div className={styles.wrapper}>
-        <Header className={styles.header} />
-        <div className={styles.main}>{children}</div>
-        <Aside className={styles.aside} />
-        <Footer className={styles.footer} />
-      </div>
+      <Layout className={styles.wrapper}>
+        <Header />
+        <div className="main">{children}</div>
+        <Aside />
+        <Footer />
+      </Layout>
+      <style jsx>{`
+        .main {
+          grid-area: main;
+          background-color: red;
+        }
+      `}</style>
     </div>
   )
 }

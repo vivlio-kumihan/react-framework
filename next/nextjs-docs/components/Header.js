@@ -1,11 +1,6 @@
 import Link from "next/link"
 import styles from "./Header.module.css"
 
-
-const LinkStyle = {
-  marginRight: "15rem",
-}
-
 const Header = () => {
   return (
   <div className={styles.header}>
